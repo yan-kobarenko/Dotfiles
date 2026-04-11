@@ -1,0 +1,111 @@
+* {
+  font-family: Source Code Pro;
+  border-radius: 8;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  /* Linear gradients are used because it makes less harsh rounded border radius, gtk bug :p */
+  background-image: linear-gradient(to bottom, #d5d6db 100%);
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-image: linear-gradient(to bottom, #f1f6f0 100%);
+
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #14233a;
+
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#clock {
+  margin-right: 6px;
+}
+
+#pulseaudio:hover {
+  background-image: linear-gradient(to bottom, #fdd179 100%);
+  color: #14233a;
+  transition-duration: 120ms;
+}
+
+#custom-applauncher {
+  font-weight: bold;
+  transition-duration: 120ms;
+}
+#custom-applauncher:hover {
+  background-image: linear-gradient(to bottom, #fdd179 100%);
+  color: #14233a;
+  transition-duration: 120ms;
+}
+
+#tray menu {
+  background-color: #fdd179;
+  color: #14233a;
+  padding: 4px;
+}
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #fdd179 100%);
+
+  margin: 3px;
+  color: #14233a;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #27232b;
+}
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom, #fdd179 100%);
+  color: #14233a;
+  font-weight: bold;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #d8cab8;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #de9f47;
+}
+#workspaces button.focused {
+  color: #de9f47;
+  font-weight: bold;
+}
+#workspaces button.active {
+  color: #de9f47;
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #b55945;
+}
+
+#battery {
+  background-color: #222222;
+  color: #1d2021;
+}
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #1d2021;
+  background-color: #fc4649;
+}

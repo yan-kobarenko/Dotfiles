@@ -212,13 +212,13 @@ mode "save" {
   bindsym 0 exec $i3_resurrect save -w 0
 
   # Back to normal: Enter, Escape, or m
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym m mode "default"
-  bindsym $mod+m mode "default"
+  bindsym Return mode "default" exec notify-send "Normal mode"
+  bindsym Escape mode "default" exec notify-send "Normal mode"
+  bindsym m mode "default" exec notify-send "Normal mode"
+  bindsym $mod+m mode "default" exec notify-send "Normal mode"
 }
 
-bindsym $mod+m mode "save"
+bindsym $mod+m mode "save" exec notify-send "Save mode"
 
 # Restore workspace mode.
 mode "restore" {
@@ -234,13 +234,13 @@ mode "restore" {
   bindsym 0 exec $i3_resurrect restore -w 0
 
   # Back to normal: Enter, Escape, or n
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym n mode "default"
-  bindsym $mod+n mode "default"
+  bindsym Return mode "default" exec notify-send "Normal mode"
+  bindsym Escape mode "default" exec notify-send "Normal mode"
+  bindsym n mode "default" exec notify-send "Normal mode"
+  bindsym $mod+n mode "default" exec notify-send "Normal mode"
 }
 
-bindsym $mod+n mode "restore"
+bindsym $mod+n mode "restore" exec notify-send "Restore mode"
 # ============================================================================
 # MEDIA KEYS
 # ============================================================================

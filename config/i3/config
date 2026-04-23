@@ -1,3 +1,4 @@
+
 # ============================================================================
 # VARIABLES
 # ============================================================================
@@ -59,7 +60,7 @@ exec_always --no-startup-id dunst
 # DEFAULT WALLPAPER
 # ============================================================================
 
-exec --no-startup-id feh --bg-scale /usr/share/backgrounds/windows_xp_6.jpg
+exec --no-startup-id feh --recursive --bg-fill --randomize ~/Bilder/wallpaper/autumn/*
 
 # ============================================================================
 # INPUT CONFIGURATION
@@ -104,9 +105,9 @@ exec --no-startup-id setxkbmap -layout de,ua -option grp:alt_shift_toggle
     bindsym $mod+F3 exec obsidian
     # Music Player
     bindsym $mod+F4 exec $term -e cmus
-    # Gimp 
-    bindsym $mod+F5 exec gimp 
-    # Inkscape 
+    # Krita 
+    bindsym $mod+F5 exec krita
+     # Inkscape
     bindsym $mod+F6 exec inkscape
 
     # Drag floating windows by holding down $mod and left mouse button.

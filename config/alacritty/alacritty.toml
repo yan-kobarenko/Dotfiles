@@ -16,16 +16,16 @@ import = [
 size = 12.0
 
 [font.normal]
-family = "Source Code Pro"
+family = "Monofur Nerd Font"
 
 [font.bold]
-family = "Source Code Pro"
+family = "Monofur Nerd Font" 
 
 [font.italic]
-family = "Source Code Pro"
+family = "Monofur Nerd Font"
 
 [font.bold_italic]
-family = "Source Code Pro"
+family = "Monofur Nerd Font"
 
 [scrolling]
 history = 10000

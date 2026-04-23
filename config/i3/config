@@ -107,7 +107,7 @@ exec --no-startup-id setxkbmap -layout de,ua -option grp:alt_shift_toggle
     bindsym $mod+F4 exec $term -e cmus
     # Krita 
     bindsym $mod+F5 exec krita
-     # Inkscape
+    # Inkscape
     bindsym $mod+F6 exec inkscape
 
     # Drag floating windows by holding down $mod and left mouse button.

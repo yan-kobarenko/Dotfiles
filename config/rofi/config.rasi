@@ -1,0 +1,11 @@
+configuration {
+	display-drun : "Programmen:";
+	display-windows: "Fenster:";
+	drun-display-format: "{name}";
+	font: "Source Code Pro Regular 12";
+    show-icons: true;
+    icon-theme: "Numix-Circle";
+	modi: "window,run,drun";
+}
+
+@theme "~/.config/rofi/themes/launchpad.rasi"

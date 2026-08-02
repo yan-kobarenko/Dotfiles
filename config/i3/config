@@ -10,7 +10,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty 
+set $term urxvt
 # Your preferred application launcher
 set $menu rofi -show drun
 # Your preferred file manager
@@ -20,7 +20,7 @@ set $fl pcmanfm
 # GENERAL SETTINGS
 # ============================================================================
 
-font pango:Source Code Pro Regular 12
+font pango:Determination 9
 
 gaps inner 8px
 gaps outer 8px
@@ -30,7 +30,10 @@ default_border pixel 1px
 default_floating_border pixel 1px
 
 for_window [floating] move position center
-for_window [class="PortProton"] floating enable  
+for_window [class="PortProton"] floating enable
+for_window [class="mpv"] floating enable
+for_window [class="vlc"] floating enable
+for_window [class="feh"] floating enable        
 
 for_window [class="^.*"] border pixel 2
 
@@ -59,7 +62,7 @@ exec_always --no-startup-id dunst
 # DEFAULT WALLPAPER
 # ============================================================================
 
-exec --no-startup-id feh --recursive --bg-fill --randomize ~/Bilder/wallpaper/yellow/*
+exec --no-startup-id feh --recursive --bg-fill --randomize /usr/share/wallpapers/yellow/*
 
 # ============================================================================
 # INPUT CONFIGURATION
@@ -97,7 +100,7 @@ exec --no-startup-id setxkbmap -layout de,ua -option grp:alt_shift_toggle
     # Btop Shortcut
     bindsym $mod+b exec $term -e btop
     # Browser
-    bindsym $mod+F1 exec min
+    bindsym $mod+F1 exec qutebrowser
     # RSS-Feeder
     bindsym $mod+F2 exec liferea
     # Obsidian
@@ -258,9 +261,9 @@ bindsym $mod+n mode "restore" exec notify-send "Restore mode"
 
 # colour scheme
 # class                 border  bg      text    ind       c_border
-client.focused          #fdd179 #14233a #fdd179 #fdd179   #fdd179
-client.focused_inactive #44702d #14233a #fdd179 #44702d   #44702d
-client.unfocused        #44702d #14233a #fdd179 #44702d   #44702d
-client.urgent           #b55945 #14233a #fdd179 #b55945   #b55945
-client.placeholder      #44702d #14233a #fdd179 #44702d   #44702d
+client.focused          #C0C7B3 #14233a #C0C7B3 #C0C7B3   #C0C7B3
+client.focused_inactive #44702d #14233a #C0C7B3 #44702d   #44702d
+client.unfocused        #44702d #14233a #C0C7B3 #44702d   #44702d
+client.urgent           #b55945 #14233a #C0C7B3 #b55945   #b55945
+client.placeholder      #44702d #14233a #C0C7B3 #44702d   #44702d
 

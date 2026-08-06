@@ -1,6 +1,8 @@
-if [[ "$(tty)" = "/dev/tty1"]]; then
+if [[ "$(tty)" = "/dev/tty1" ]]; then
 	pgrep i3 || startx
+fi
 
+xrdb ~/.Xresources
 eval "$(starship init zsh)"
 autoload -Uz compinit
 compinit

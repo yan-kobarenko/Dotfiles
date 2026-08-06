@@ -39,36 +39,6 @@ for_window [class="^.*"] border pixel 2
 
 exec --no-startup-id dex --autostart --environment i3
 
-# ============================================================================
-# AUTOSTART
-# ============================================================================
-# X11-Compositor
-exec_always --no-startup-id picom
-
-# Autotiling
-exec_always --no-startup-id autotiling
-
-# Bar
-exec_always killall polybar 
-exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-
-# Clipboard Manager
-exec_always --no-startup-id parcellite
-
-# Notification Daemon
-exec_always --no-startup-id dunst
-
-# ============================================================================
-# DEFAULT WALLPAPER
-# ============================================================================
-
-exec --no-startup-id feh --recursive --bg-fill --randomize /usr/share/wallpapers/yellow/*
-
-# ============================================================================
-# INPUT CONFIGURATION
-# ============================================================================
-
-exec --no-startup-id setxkbmap -layout de,ua -option grp:alt_shift_toggle
 
 # ============================================================================
 # KEY BINDINGS
@@ -266,4 +236,3 @@ client.focused_inactive #44702d #14233a #C0C7B3 #44702d   #44702d
 client.unfocused        #44702d #14233a #C0C7B3 #44702d   #44702d
 client.urgent           #b55945 #14233a #C0C7B3 #b55945   #b55945
 client.placeholder      #44702d #14233a #C0C7B3 #44702d   #44702d
-
